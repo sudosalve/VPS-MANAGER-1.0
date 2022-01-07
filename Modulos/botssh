@@ -42,10 +42,10 @@ fun_botOnOff() {
         echo -e "\033[1;32mINICIANDO BOT VPS MANAGER \033[0m\n"
         fun_bot1() {
         	[[ "$(grep -wc '16' /etc/issue.net)" != '0' ]] && {
-        		wget -qO- https://raw.githubusercontent.com/NT-GIT-HUB/VPS-MANAGER-1.0/main/Install/ShellBot.sh > /etc/VPSManager/ShellBot.sh
+        		wget -qO- https://raw.githubusercontent.com/sudosalve/VPS-MANAGER-1.0/master/Install/ShellBot.sh > /etc/VPSManager/ShellBot.sh
         	}
             [[ ! -e "/etc/VPSManager/ShellBot.sh" ]] && {
-				wget -qO- https://raw.githubusercontent.com/NT-GIT-HUB/VPS-MANAGER-1.0/main/Install/ShellBot.sh >/etc/VPSManager/ShellBot.sh
+				wget -qO- https://raw.githubusercontent.com/sudosalve/VPS-MANAGER-1.0/master/Install/ShellBot.sh >/etc/VPSManager/ShellBot.sh
 			}
             cd /etc/VPSManager
             screen -dmS bot_plus ./bot $tokenbot $iduser >/dev/null 2>&1
