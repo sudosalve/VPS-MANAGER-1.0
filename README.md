@@ -14,4 +14,4 @@ __Instalar o SCRIPT e atualizar pacotes do sistema__
 
 Desinstalar script
 
-wget https://raw.githubusercontent.com/sudosalve/VPS-MANAGER-1.0/main/Modulos/delscript; chmod 777 delscript; ./delscript
+wget https://raw.githubusercontent.com/sudosalve/VPS-MANAGER-1.0/master/Modulos/delscript; chmod 777 delscript; ./delscript
